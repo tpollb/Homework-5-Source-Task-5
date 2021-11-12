@@ -10,7 +10,7 @@ namespace Homework_5_Source_Task_5
         /// <param name="n"></param>
         /// <param name="m"></param>
         /// <returns></returns>
-        static double AkermanFunction(double n, double m)
+        static Int64 AkermanFunction(Int64 n, Int64 m)
         {
             if (n == 0)
             {
@@ -27,17 +27,17 @@ namespace Homework_5_Source_Task_5
         }
         static void Main(string[] args)
         {
-            double n = 0;
-            double m = 0;
+            Int64 n = 0;
+            Int64 m = 0;
             while (n < 1 || n > 3)
             {
                 Console.WriteLine("Введите первый параметр функции n от 1 до 3: ");
-                n = double.Parse(Console.ReadLine());
+                n = Int64.Parse(Console.ReadLine());
             }
-            while (m < 1 || n > 20)
+            while (m < 1 || n > 10)
             {
-                Console.WriteLine("Введите первый параметр функции m от 1 до 20: ");
-                m = double.Parse(Console.ReadLine());
+                Console.WriteLine("Введите первый параметр функции m от 1 до 10: ");
+                m = Int64.Parse(Console.ReadLine());
             }
 
             Console.WriteLine($"Результат: " + AkermanFunction(n, m));
